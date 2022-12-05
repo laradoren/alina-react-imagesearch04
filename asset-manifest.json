@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/alina-react-imagesearch04/static/css/main.5e953e8d.css",
+    "main.js": "/alina-react-imagesearch04/static/js/main.c8624ea7.js",
+    "index.html": "/alina-react-imagesearch04/index.html",
+    "main.5e953e8d.css.map": "/alina-react-imagesearch04/static/css/main.5e953e8d.css.map",
+    "main.c8624ea7.js.map": "/alina-react-imagesearch04/static/js/main.c8624ea7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e953e8d.css",
+    "static/js/main.c8624ea7.js"
+  ]
+}
