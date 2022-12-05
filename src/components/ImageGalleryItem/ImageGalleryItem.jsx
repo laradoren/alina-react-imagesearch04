@@ -8,23 +8,30 @@ export class ImageGalleryItem extends React.Component {
     super(props);
     this.state = {
       isModalOpen: false,
-     };
+    };
     this.setModalState = this.setModalState.bind(this);
   }
 
-
-
   setModalState() {
     this.setState({
-      isModalOpen: !this.state.isModalOpen
+      isModalOpen: !this.state.isModalOpen,
     });
   }
 
   render() {
     return (
       <li className={css.ImageGalleryItem} onClick={this.setModalState}>
-        <img className={css.ImageGalleryItemImage} src={this.props.webformatURL} alt="Gallery item" />
-        {this.state.isModalOpen && <Modal largeImageURL={this.props.largeImageURL} setModalState={this.setModalState}/>}
+        <img
+          className={css.ImageGalleryItemImage}
+          src={this.props.webformatURL}
+          alt="Gallery item"
+        />
+        {this.state.isModalOpen && (
+          <Modal
+            largeImageURL={this.props.largeImageURL}
+            setModalState={this.setModalState}
+          />
+        )}
       </li>
     );
   }
@@ -32,5 +39,5 @@ export class ImageGalleryItem extends React.Component {
 
 ImageGalleryItem.propTypes = {
   webformatURL: PropTypes.string.isRequired,
-  largeImageURL: PropTypes.string.isRequired
-}
+  largeImageURL: PropTypes.string.isRequired,
+};
